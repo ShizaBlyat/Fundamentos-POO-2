@@ -1,0 +1,41 @@
+package Carro;
+public class Carro {
+    private String marca;
+    private String modelo;
+    private int anio;
+    private int kilometraje;
+    private static int numCoche = 0;
+    //Constructor No. 1 (Inicializa los parametros en cero)
+    public Carro(){
+        marca = "";
+        modelo = "";
+        anio = 0;
+        kilometraje = 0;
+        contarCarro(); //Contador de todos los objetos creados
+    }
+//Constructor No. 2 (puede modificar los atributos de los parametros que se agreguen en el constructor, en este caso todos)
+    public Carro(String marca, String modelo, int anio, int kilometraje) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.anio = anio;
+        this.kilometraje = kilometraje;
+        contarCarro();
+    }
+
+    static void contarCarro(){ //Incrementa el contador de coches
+        numCoche++;
+    }
+    //Get y Set de cada atributo
+    public static int getNumCoche() {return numCoche;}
+    public String getMarca() {return marca;}
+    public void setMarca(String marca) {this.marca = marca;}
+    public String getModelo() {return modelo;}
+    public void setModelo(String modelo) {this.modelo = modelo;}
+    public int getAnio() {return anio;}
+    public void setAnio(int anio) {this.anio = anio;}
+    public int getKilometraje() {return kilometraje;}
+    public void setKilometraje(int kilometraje) {this.kilometraje = kilometraje;}
+
+    protected void mostrarInfo() {
+    }
+}

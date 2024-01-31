@@ -1,0 +1,23 @@
+package Carro;
+public class Camioneta extends Carro{
+    //Atributo privado (asientos)
+    private int asientos;
+
+    //Constructor publico
+    public Camioneta(String marca, String modelo, int anio, int kilometraje, int asientos) {
+        super(marca, modelo, anio, kilometraje);
+        this.asientos = asientos;
+    }
+
+    public int getAsientos() {
+        return asientos;
+    }
+
+    public void setAsientos(int asientos) {
+        this.asientos = asientos;
+    }
+    public void mostrarInfo(){
+        super.mostrarInfo();
+        System.out.printf("Asientos:"+asientos);
+    }
+}

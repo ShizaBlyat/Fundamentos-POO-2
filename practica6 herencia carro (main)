@@ -1,9 +1,8 @@
-/**
+/*
  * UPTx - Fundamentos de Programacion Orientada a Objetos
  * Practica No. 6      Grupo 5H
  * Objetivo: Realizar el diseño UML de la clase Carro y diseño UML del los objetos de prueba, donde se observe la herencia.
- * Alumno: Cesar Eyddel Escobedo Ramirez
- */
+ * Integrantes: Escobedo Ramirez Cesar Eyddel, Mejía Rojas Miriam, Ortiz Flores Missael, Tlalpa Sánchez Alan */
 import Carro.Carro;
 import Carro.Camioneta;
 import Carro.Turismo;

@@ -1,0 +1,40 @@
+/**
+ * UPTx - Fundamentos de Programacion Orientada a Objetos
+ * Practica No. 6      Grupo 5H
+ * Objetivo: Realizar el diseño UML de la clase Carro y diseño UML del los objetos de prueba, donde se observe la herencia.
+ * Alumno: Cesar Eyddel Escobedo Ramirez
+ */
+import Carro.Carro;
+import Carro.Camioneta;
+import Carro.Turismo;
+public class Main {
+    public static void main(String[] args) {
+        //Instancia del los objetos
+        Carro carro1 = new Carro("Honda", "Civic", 2021, 20000);
+        Camioneta carro2 = new Camioneta("Volkswagen","Delivery 6.160",2023,25000,6);
+        Turismo carro3 = new Turismo("Volkbus","9.160 OD",2023,32000,36);
+        //Mostrar los atributos del objeto (Carro 1)
+        System.out.println("Carro 1");
+        System.out.println("Marca: "+carro1.getMarca());
+        System.out.println("Modelo: "+carro1.getModelo());
+        System.out.println("Año: "+carro1.getAnio());
+        System.out.println("Kilometraje: "+carro1.getKilometraje());
+        //Mostrar los atributos del objeto (Carro 2)
+        System.out.println("\nCarro 2 (Camioneta)");
+        carro2.mostrarInfo(); //llama al método mostrarInfo() de la clase Camioneta
+        System.out.println("Marca: "+carro2.getMarca());
+        System.out.println("Modelo: "+carro2.getModelo());
+        System.out.println("Año: "+carro2.getAnio());
+        System.out.println("Kilometraje: "+carro2.getKilometraje());
+        System.out.println("Asientos: "+carro2.getAsientos());
+        //Mostrar los atributos del objeto (Carro 3)
+        System.out.println("\nCarro 3 (Turismo)");
+        carro3.mostrarInfo(); //llama al método mostrarInfo() de la clase Turismo
+        System.out.println("Marca: "+carro3.getMarca());
+        System.out.println("Modelo: "+carro3.getModelo());
+        System.out.println("Año: "+carro3.getAnio());
+        System.out.println("Kilometraje: "+carro3.getKilometraje());
+        System.out.println("Asientos: "+carro3.getAsientos());
+        System.out.println("\nTotal de Vehículos: "+Carro.getNumCoche());
+    }
+}

@@ -1,0 +1,24 @@
+package registro;
+public abstract class Persona {
+    //Atributos
+    private String nombre;
+    private String apellidos;
+    private Integer edad;
+    //Constructor
+    public Persona(String nombre, String apellidos, Integer edad) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.edad = edad;
+    }
+    //Getter
+    public String getNombre() {
+        return nombre;
+    }
+    public String getApellidos() {
+        return apellidos;
+    }
+    public Integer getEdad() {
+        return edad;
+    }
+    public abstract String toString();
+}

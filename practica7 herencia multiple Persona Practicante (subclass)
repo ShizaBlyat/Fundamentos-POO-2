@@ -1,0 +1,21 @@
+package registro;
+public class Practicante extends Alumno{
+    //Atributos
+    private String idPracticante;
+    //Constructor
+    public Practicante(String nombre, String apellidos, int edad, String idAlumno,String idPracticante) {
+        super(nombre, apellidos, edad, idAlumno);
+        this.idPracticante=idPracticante;
+    }
+    //Getter & Setter
+    public String getIdPracticante() {
+        return idPracticante;
+    }
+    public void setIdPracticante(String idPracticante) {
+        this.idPracticante = idPracticante;
+    }
+    @Override
+    public String toString() {
+        return "Nombre:"+getNombre()+"\nApellidos:"+getApellidos()+"\nEdad:"+getEdad()+"\nID:"+getIdPracticante();
+    }
+}

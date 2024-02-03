@@ -1,0 +1,19 @@
+/* UPTx - Fundamentos de Programacion Orientada a Objetos
+ * Practica No. 7      Grupo 5H
+ * Objetivo: Realizar el codigo de la clase Persona, donde se observen los tipos de herencia vistos en clase.
+ * Integrantes: Escobedo Ramirez Cesar Eyddel, Mejía Rojas Miriam, Ortiz Flores Missael, Tlalpa Sánchez Alan */
+import registro.*;
+public class Main {
+    public static void main(String[] args) {
+//Instancia de los objetos
+        Alumno alumno1 =new Alumno("Cesar Eyddel", "Escobedo Ramirez", 19, "2231123403");
+        Practicante practicante1 =new Practicante ("Cesar Eyddel", "Escobedo Ramirez", 19, "2231123403","2403");
+        Profesor profesor1 =new Profesor ("Saul Olaf", "Loaiza Melendez", 45, "131");
+        System.out.printf("DATOS DE ALUMNO\n");
+        System.out.printf(alumno1.toString());
+        System.out.printf("\nDATOS DE PRACTICANTE\n");
+        System.out.printf(practicante1.toString());
+        System.out.printf("\nDATOS DE PROFESOR\n");
+        System.out.printf(profesor1.toString());
+    }
+}

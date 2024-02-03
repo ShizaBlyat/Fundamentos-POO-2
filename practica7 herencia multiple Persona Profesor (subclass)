@@ -1,0 +1,21 @@
+package registro;
+public class Profesor extends Persona{
+    //Atributos
+    private String idProfesor;
+    //Constructor
+    public Profesor(String nombre, String apellidos, int edad, String idProfesor) {
+        super(nombre, apellidos, edad);
+        this.idProfesor = idProfesor;
+    }
+    //Getter & Setter
+    public String getIdProfesor() {
+        return idProfesor;
+    }
+    public void setIdProfesor(String idProfesor) {
+        this.idProfesor = idProfesor;
+    }
+    @Override
+    public String toString() {
+        return "Nombre:"+getNombre()+"\nApellidos:"+getApellidos()+"\nEdad:"+getEdad()+"\nID:"+getIdProfesor();
+    }
+}

@@ -1,0 +1,21 @@
+package registro;
+public class Alumno extends Persona {
+    //Atributos
+    private String idAlumno;
+    //Constructor
+    public Alumno(String nombre, String apellidos, Integer edad, String idAlumno) {
+        super(nombre, apellidos, edad);
+        this.idAlumno = idAlumno;
+    }
+    //Getter & Setter
+    public String getIdAlumno() {
+        return idAlumno;
+    }
+    public void setIdAlumno(String idAlumno) {
+        this.idAlumno = idAlumno;
+    }
+    @Override
+    public String toString() {
+return "Nombre:"+getNombre()+"\nApellidos:"+getApellidos()+"\nEdad:"+getEdad()+"\nID:"+getIdAlumno();
+    }
+}

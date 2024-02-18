@@ -1,0 +1,29 @@
+public class Rectangulo extends Figura {
+    //Atributos
+    private double ancho;
+    private double alto;
+    // Constructores
+    public Rectangulo() {
+        this.ancho = 0;
+        this.alto = 0;
+    }
+    public Rectangulo(double ancho, double alto) {
+        this.ancho = ancho;
+        this.alto = alto;
+    }
+    public Rectangulo(double ancho, double alto, String color, boolean relleno) {
+        super(color, relleno);
+        this.ancho = ancho;
+        this.alto = alto; }
+    // Getters y setters
+    public double getAncho() { return ancho; }
+    public void setAncho(double ancho) {  this.ancho = ancho;  }
+    public double getAlto() {  return alto; }
+    public void setAlto(double alto) {  this.alto = alto; }
+    // Métodos
+    public double getArea() { return ancho * alto; }
+    public double getPerimetro() {  return 2 * (ancho + alto); }
+    // Método toString
+    @Override
+    public String toString() {
+        return "Soy un rectángulo con ancho = " + ancho + " y alto = " + alto + ", esta es mi superclase: " +super.toString();}}

@@ -1,0 +1,47 @@
+/* UPTx - Fundamentos de Programacion Orientada a Objetos
+ * Segunda Evaluacion      Grupo 5H
+ * Objetivo: Realizar el codigo de la clase Figura, donde se observen las herencias entre clases.
+ * Integrantes: Escobedo Ramirez Cesar Eyddel, Mejía Rojas Miriam, Ortiz Flores Missael, Tlalpa Sánchez Alan */
+import Figuras.*;
+public class Main {
+    public static void main(String[] args) {
+ //Instancia de Figuras
+Figura figura1=new Figura();
+System.out.println("\n~~FIGURAS~~");
+        System.out.printf(figura1.toString());
+Figura figura2=new Figura("Verde", false);
+        System.out.println("\n"+figura2);
+//Instancia de Circulos
+Circulo circulo1=new Circulo(){};
+System.out.println("\n~~CIRCULOS~~");
+        System.out.printf(circulo1.toString());
+        System.out.println("\nÁrea del círculo 1: " + circulo1.getArea());
+        System.out.println("Perímetro del círculo 1: " + circulo1.getPerimetro());
+Circulo circulo2=new Circulo("Azul", false, 6.0){};
+        System.out.println("\n"+circulo2);
+        System.out.println("Área del círculo 2: " + circulo2.getArea());
+        System.out.println("Perímetro del círculo 2: " + circulo2.getPerimetro());
+Circulo circulo3 = new Circulo(8.2){};
+        System.out.println("\n"+circulo3);
+        System.out.println("Área del círculo 3: " + circulo1.getArea());
+        System.out.println("Perímetro del círculo 3:" + circulo1.getPerimetro());
+//Instancia de Rentangulos
+Rectangulo rectangulo1=new Rectangulo(){};
+System.out.println("\n~~RECTANGULOS~~");
+        System.out.printf(rectangulo1.toString());
+        System.out.println("\nÁrea del rectángulo 1: " + rectangulo1.getArea());
+        System.out.println("Perímetro del rectángulo 1: " + rectangulo1.getPerimetro());
+Rectangulo rectangulo2=new Rectangulo(4.0, 5.0, "Morado", true);
+        System.out.println("\n"+rectangulo2);
+        System.out.println("Área del rectángulo 2: " + rectangulo2.getArea());
+        System.out.println("Perímetro del rectángulo 2: " + rectangulo2.getPerimetro());
+            Rectangulo rectangulo3=new Rectangulo(5.3, 7.8);
+            System.out.println("\n"+rectangulo3);
+            System.out.println("Área del rectángulo 3: " + rectangulo3.getArea());
+            System.out.println("Perímetro del rectángulo 3: " + rectangulo3.getPerimetro());
+//Instancia de Cuadrado
+Cuadrado cuadrado1=new Cuadrado(2.5);
+System.out.println("\n~~CUADRADO~~");
+        System.out.println(cuadrado1);
+        System.out.println("Área del cuadrado: " + cuadrado1.getArea());
+        System.out.println("Perímetro del cuadrado: " + cuadrado1.getPerimetro());}}

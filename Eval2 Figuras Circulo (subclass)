@@ -1,0 +1,27 @@
+package Figuras;
+public abstract class Circulo extends Figura {
+    //Atributos
+    private double radio;
+    //Contructor No. 1
+    public Circulo() {
+        super();  // Llama al constructor de la superclase Figura
+        radio = 1.0;
+    }
+    //Contructor No. 2
+    public Circulo(double radio) {
+        this.radio = radio;
+    }
+    //Contructor No. 3
+    public Circulo(String color, boolean relleno, double radio) {
+        super(color, relleno);  // Llama al constructor de la superclase Figura
+        this.radio = radio; }
+    //Getters & Setters
+    public double getRadio() { return radio; }
+    public void setRadio(double radio) { this.radio = radio; }
+    //Metodo Area
+    public double getArea() { return Math.PI * Math.pow(radio, 2); }
+    //Metodo Perimetro
+    public double getPerimetro() { return 2 * Math.PI * radio; }
+    @Override
+    public String toString() {
+        return "Soy un círculo con radio = " + getRadio() + ", esta es mi superclase:" +super.toString(); } }

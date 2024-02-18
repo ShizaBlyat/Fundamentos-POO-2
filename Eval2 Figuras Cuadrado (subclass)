@@ -1,0 +1,11 @@
+package Figuras;
+public class Cuadrado extends Rectangulo {
+    // Constructor
+    public Cuadrado(double lado) {
+        super(lado, lado);
+    }
+    @Override
+    public String toString() {
+        return "Soy un cuadrado con lado = " + getAncho() + ", esta es mi superclase: " +super.toString();
+    }
+}

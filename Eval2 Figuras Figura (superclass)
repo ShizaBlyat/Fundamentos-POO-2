@@ -1,0 +1,21 @@
+package Figuras;
+public class Figura {
+    //Atributos
+    private String color;
+    boolean relleno;
+    //Contructor No. 1 que asigna el color y relleno
+public Figura(){
+    color="Rojo";
+    relleno=true;
+}
+    //Contructor No. 2 que inicializa los valores
+    public Figura(String color, boolean relleno) {
+        this.color = color;
+        this.relleno = relleno; }
+    //Getters & Setters
+    public String getColor() { return color; }
+    public void setColor(String color) { this.color = color; }
+    public boolean isRelleno() { return relleno; }
+    public void setRelleno(boolean relleno) { this.relleno = relleno;  }
+    @Override
+    public String toString() { return "Soy una figura de color "+getColor()+" & "+(relleno ? "rellena" : "no rellena"); }}

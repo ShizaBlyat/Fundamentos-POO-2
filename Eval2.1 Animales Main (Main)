@@ -1,0 +1,23 @@
+import Animales.*;
+public class Main {
+    public static void main(String[] args) {
+        //Instancia heredada de Animal
+        System.out.println("~~PERRO Y GATO CON HERENCIA~~");
+        Perro perro1 = new Perro();
+        System.out.println(perro1);
+        Gato gato1 = new Gato();
+        System.out.println(gato1);
+        // Quitamos una vida al gatito :c
+        gato1.quitaVida();
+        System.out.println("Después de quitar una vida: " + gato1);
+        //Instancias creadas
+        System.out.println("~~PERRO Y GATO SIN HERENCIA~~");
+        Perro perro2 = new Perro("Firulais", 3, "Golden Retriever");
+        System.out.println(perro2);
+        Gato gato2 = new Gato("Pelusa", 5, "Siames", 8);
+        // Quitamos una vida al gatito :c
+        System.out.println(gato2);
+        gato2.quitaVida();
+        System.out.println("Después de quitar una vida: " + gato2);
+    }
+}

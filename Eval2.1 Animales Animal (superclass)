@@ -1,0 +1,24 @@
+package Animales;
+class Animal {
+    private String nombre;
+    private int edad;
+    private static int totalAnimales = 0;
+    // Constructor sin argumentos
+    public Animal() {
+        this.nombre = "Desconocido";
+        this.edad = 0;
+        totalAnimales++; }
+    // Constructor con argumentos
+    public Animal(String nombre, int edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+        totalAnimales++; }
+    // Getters & Setters
+    public String getNombre() { return nombre; }
+    public void setNombre(String nombre) { this.nombre = nombre; }
+    public int getEdad() { return edad; }
+    public void setEdad(int edad) { this.edad = edad; }
+    // Sobreescritura del método toString()
+    @Override
+    public String toString() {
+        return "Hay " + totalAnimales + " animales creados. Yo me llamo " + nombre + " y tengo " + edad + " años"; } }

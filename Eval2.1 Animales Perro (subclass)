@@ -1,0 +1,25 @@
+package Animales;
+public class Perro extends Animal {
+    private String raza;
+    // Constructor sin argumentos
+    public Perro() {
+        super();
+        this.raza = "Desconocido";
+    }
+    // Constructor con argumentos
+    public Perro(String nombre, int edad, String raza) {
+        super(nombre, edad);
+        this.raza = raza;
+    }
+    // Getter & Setter
+    public String getRaza() {
+        return raza;
+    }
+    public void setRaza(String raza) {
+        this.raza = raza;
+    }
+    @Override
+    public String toString() {
+        return "Hola, soy un PERRO, me llamo " + getNombre() + ", tengo " + getEdad() + " años y soy un " + raza;
+    }
+}

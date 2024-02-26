@@ -1,6 +1,6 @@
 /* UPTx - Fundamentos de Programacion Orientada a Objetos
  * Segunda Evaluacion      Grupo 5H
- * Objetivo: Realizar el codigo de la clase Figura, donde se observen las herencias entre clases.
+ * Objetivo: Realizar el codigo de la clase Animal, donde se observen las herencias entre clases.
  * Integrantes: Escobedo Ramirez Cesar Eyddel, Mejía Rojas Miriam, Ortiz Flores Missael, Tlalpa Sánchez Alan */
 import Animales.*;
 public class Main {

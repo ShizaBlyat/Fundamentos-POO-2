@@ -1,0 +1,28 @@
+package Animales;
+public class Gato extends Animal {
+    private String raza;
+    private int numVidas;
+    // Constructor sin argumentos
+    public Gato() {
+        super();
+        this.raza = "Desconocido";
+        this.numVidas = 7; }
+    // Constructor con argumentos
+    public Gato(String nombre, int edad, String raza, int numVidas) {
+        super(nombre, edad);
+        this.raza = raza;
+        this.numVidas=numVidas; }
+    // Getter y setter para la raza
+    public String getRaza() { return raza; }
+    public void setRaza(String raza) { this.raza = raza; }
+    public void setNumVidas(int numVidas) { this.numVidas = numVidas; }
+    // Método para obtener el número de vidas
+    public int getVida() { return numVidas; }
+    // Método para quitar una vida al gatito :c
+    public void quitaVida() {
+        if (numVidas > 0) {
+            numVidas--;
+        } }
+    // Sobreescritura del método toString()
+    @Override
+    public String toString() { return "Hola, soy un GATO, me llamo " + getNombre() + ", tengo " + getEdad() + " años. Soy un " + raza + ". Y tengo " +numVidas+ " vidas"; } }

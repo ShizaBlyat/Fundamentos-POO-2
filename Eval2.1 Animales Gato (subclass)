@@ -7,11 +7,12 @@ public class Gato extends Animal {
         super();
         this.raza = "Desconocido";
         this.numVidas = 7; }
-    // Constructor con argumentos
-    public Gato(String nombre, int edad, String raza, int numVidas) {
-        super(nombre, edad);
-        this.raza = raza;
-        this.numVidas=numVidas; }
+    // Constructor con parámetros para establecer el número de vidas
+    public Gato(int numVidas) { this.numVidas = numVidas; }
+    // Constructor con parámetros para establecer nombre, edad y número de vidas
+    public Gato(String nombre, int edad, int numVidas) {
+        super(nombre, edad); // Llama al constructor de la superclase (Animal)
+        this.numVidas = numVidas; }
     // Getter y setter para la raza
     public String getRaza() { return raza; }
     public void setRaza(String raza) { this.raza = raza; }
@@ -20,9 +21,8 @@ public class Gato extends Animal {
     public int getVida() { return numVidas; }
     // Método para quitar una vida al gatito :c
     public void quitaVida() {
-        if (numVidas > 0) {
-            numVidas--;
-        } }
+        if (numVidas > 0) { numVidas--; } }
     // Sobreescritura del método toString()
     @Override
-    public String toString() { return "Hola, soy un GATO, me llamo " + getNombre() + ", tengo " + getEdad() + " años. Soy un " + raza + ". Y tengo " +numVidas+ " vidas"; } }
+    public String toString() {
+        return "Hola, soy un GATO, me llamo " + getNombre() + ", tengo " + getEdad() + " años. Soy un " + raza + ". Y tengo " +numVidas+ " vidas";}}

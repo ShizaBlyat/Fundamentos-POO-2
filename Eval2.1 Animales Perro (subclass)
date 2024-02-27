@@ -6,20 +6,18 @@ public class Perro extends Animal {
         super();
         this.raza = "Desconocido";
     }
+    // Constructor con parámetro para establecer la raza
+    public Perro(String raza) {
+        this.raza = raza;
+    }
     // Constructor con argumentos
     public Perro(String nombre, int edad, String raza) {
         super(nombre, edad);
         this.raza = raza;
     }
     // Getter & Setter
-    public String getRaza() {
-        return raza;
-    }
-    public void setRaza(String raza) {
-        this.raza = raza;
-    }
+    public String getRaza() { return raza; }
+    public void setRaza(String raza) { this.raza = raza; }
     @Override
     public String toString() {
-        return "Hola, soy un PERRO, me llamo " + getNombre() + ", tengo " + getEdad() + " años y soy un " + raza;
-    }
-}
+        return "Hola, soy un PERRO, me llamo " + getNombre() + ", tengo " + getEdad() + " años y soy un " + raza; } }

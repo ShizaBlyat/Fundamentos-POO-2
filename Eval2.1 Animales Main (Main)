@@ -5,22 +5,32 @@
 import Animales.*;
 public class Main {
     public static void main(String[] args) {
-        //Instancia heredada de Animal
-        System.out.println("~~PERRO Y GATO CON HERENCIA~~");
+        // Crear instancias de animales
+        Animal animal1 = new Animal();
+        System.out.println(animal1);
+        // Instancias heredadas de Animal (Perro y Gato sin argumentos)
+        System.out.println("~~PERRO Y GATO SIN ARGUMENTOS~~");
         Perro perro1 = new Perro();
         System.out.println(perro1);
         Gato gato1 = new Gato();
         System.out.println(gato1);
         // Quitamos una vida al gatito :c
         gato1.quitaVida();
-        System.out.println("Después de quitar una vida: " + gato1);
-        //Instancias creadas
-        System.out.println("~~PERRO Y GATO SIN HERENCIA~~");
+        // Instancias creadas (Perro y Gato con argumentos)
+        System.out.println("~~PERRO Y GATO CON ARGUMENTOS~~");
         Perro perro2 = new Perro("Firulais", 3, "Golden Retriever");
         System.out.println(perro2);
-        Gato gato2 = new Gato("Pelusa", 5, "Siames", 8);
-        // Quitamos una vida al gatito :c
+        Perro perro3 = new Perro("Pug");
+        System.out.println(perro3);
+        Gato gato2 = new Gato(5);
         System.out.println(gato2);
+        // Quitamos una vida al gatito :c
         gato2.quitaVida();
-        System.out.println("Después de quitar una vida: " + gato2); }
-}
+        System.out.println("Después de quitar una vida: " + gato2);
+        Gato gato3 = new Gato("Pelusa", 2, 7,"Siames");
+        // Quitamos una vida al gatito :c
+        System.out.println(gato3);
+        gato3.quitaVida();
+        System.out.println("Después de quitar una vida: " + gato3);}}
+        gato2.quitaVida();
+        System.out.println("Después de quitar una vida: " + gato2); }}
